@@ -261,8 +261,8 @@ interface.launch(share=True, debug=True)
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ziaddsaid90-prog/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/Abdoulaye279/ML-AI-/
+cd <ML-AI>
 ```
 
 ### 2. Install the required libraries
@@ -276,7 +276,7 @@ pip install tensorflow numpy matplotlib scikit-learn seaborn gradio kagglehub
 Open:
 
 ```text
-Untitled17 (1).ipynb
+TB_detection.ipynb
 ```
 
 using Jupyter Notebook, JupyterLab, Google Colab, or Kaggle.
@@ -350,16 +350,14 @@ This project demonstrates practical experience with:
 - TensorFlow/Keras
 - Model deployment with Gradio
 
----
+
 
 ## 👨‍💻 Author
 
-**Ziad Said**
+**Abdoulaye KOITA**
 
-GitHub:  
-https://github.com/ziaddsaid90-prog
 
----
+
 
 ## ⚠️ Disclaimer
 
