@@ -1,6 +1,6 @@
-# 🫁 Chest X-Ray Pneumonia Detection
+# 🫁 Chest X-Ray Tuberculosis Detection
 
-A deep learning project for detecting **Pneumonia from Chest X-Ray images** using Convolutional Neural Networks and Transfer Learning with **MobileNetV2**.
+A deep learning project for detecting **Tuberculosis from Chest X-Ray images** using Convolutional Neural Networks and Transfer Learning with **MobileNetV2**.
 
 The project includes data exploration, image preprocessing, data augmentation, transfer learning, model training, evaluation, and a simple **Gradio web interface** for making predictions on new X-Ray images.
 
@@ -11,9 +11,9 @@ The project includes data exploration, image preprocessing, data augmentation, t
 The goal of this project is to build an image classification model that can classify chest X-ray images into two classes:
 
 - **NORMAL**
-- **PNEUMONIA**
+- **TUBERCULOSIS**
 
-The project uses the **Chest X-Ray Images (Pneumonia)** dataset from Kaggle and applies Transfer Learning using a pre-trained MobileNetV2 model.
+The project uses the **Chest X-Ray Images (Tuberculosis)** dataset from Kaggle and applies Transfer Learning using a pre-trained MobileNetV2 model.
 
 > ⚠️ This project is for educational/research purposes only and is not intended to replace professional medical diagnosis.
 
@@ -21,24 +21,12 @@ The project uses the **Chest X-Ray Images (Pneumonia)** dataset from Kaggle and 
 
 ## 📂 Dataset
 
-**Dataset:** Chest X-Ray Images (Pneumonia)
+**Dataset:** Chest X-Ray Images (Tuberculosis)
 
 **Source:** Kaggle  
-**Dataset:** `paultimothymooney/chest-xray-pneumonia`
+**Dataset:** `saife245/tuberculosis-image-datasets`
 
-The dataset contains the following structure:
 
-```text
-chest_xray/
-├── train/
-│   ├── NORMAL/
-│   └── PNEUMONIA/
-├── val/
-│   ├── NORMAL/
-│   └── PNEUMONIA/
-└── test/
-    ├── NORMAL/
-    └── PNEUMONIA/
 ```
 
 The notebook creates the training and validation generators from the training directory using an **80/20 validation split**, while the test set is kept for final evaluation.
@@ -219,7 +207,7 @@ The project includes a simple Gradio interface that allows a user to upload a ch
 
 ```text
 NORMAL
-PNEUMONIA
+TUBERCULOSIS
 ```
 
 The interface also displays the model's confidence score.
@@ -245,7 +233,7 @@ MobileNetV2 Model
      ↓
 Prediction
      ↓
-NORMAL / PNEUMONIA
+NORMAL / TUBERCULOSIS
 ```
 
 The notebook launches Gradio with:
@@ -304,26 +292,19 @@ Run the cells in order:
 ## 📁 Project Structure
 
 ```text
-Chest-XRay-Pneumonia-Detection/
+ML-AI/
 │
-├── Untitled17 (1).ipynb
+├── TB_detection.ipynb
 ├── improved_cnn_model.h5
-├── README.md
-└── screenshots/
-    ├── sample-xrays.png
-    ├── training-accuracy.png
-    ├── training-loss.png
-    └── confusion-matrix.png
+├── README_TB_detection.md
+
 ```
-
-> The `screenshots/` folder is optional and can be added later to make the GitHub repository more visual.
-
 ---
 
 ## 🔍 Key Features
 
 - Chest X-Ray image classification
-- Binary classification: NORMAL vs PNEUMONIA
+- Binary classification: NORMAL vs TUBERCULOSIS
 - Transfer Learning with MobileNetV2
 - Image augmentation
 - Early stopping
